@@ -1,0 +1,6 @@
+{
+	"project_name": "",
+	"project_description": "Welcome to project {{ cookiecutter.project_name }}!",
+	"repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+	"org_name": "{{ Brian Bailey }}"
+}
