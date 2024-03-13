@@ -9,9 +9,9 @@ RUN apt-get update \
 	&& ACCEPT_EULA=Y apt-get install --no-install-recommends -y dos2unix
 
 # Install our python dependencies in our container
-COPY requirements.txt /tmp/pip/
-RUN pip3 --disable-pip-version-check --no-cache-dir install -r /tmp/pip/requirements.txt \
-	&& rm -rf /tmp/pip
+COPY requirements.txt .
+RUN pip --disable-pip-version-check --no-cache-dir install -r requirements.txt
+RUN rm requirements.txt
 
 # Copy user specific .bash_aliases and make it linux friendly
 COPY .devcontainer/.bash_aliases ${USER_HOME}/.bash_aliases
