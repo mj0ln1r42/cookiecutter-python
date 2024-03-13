@@ -30,5 +30,4 @@ PathLike = TypeVar("PathLike", str, bytes, os.PathLike)
 def ToPath(path: PathLike) -> Path:
     if isinstance(path, bytes):
         return Path(os.fsdecode(path))
-    else:
-        return Path(path)
+    return Path(path)
