@@ -7,12 +7,12 @@ def main(args):
 
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(
-		description="{{ cookiecutter.project_description }}"
-	)
+    parser = argparse.ArgumentParser(
+        description="{{ cookiecutter.project_description }}"
+    )
 
-	# Add args here
+    # Add args here
     # parser.add_argument('--integers', type=int, help='an integer for the accumulator')
 
-	args = parser.parse_args()
-	main(args)
+    args = parser.parse_args()
+    main(args)

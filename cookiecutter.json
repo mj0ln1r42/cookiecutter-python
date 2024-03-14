@@ -1,7 +1,7 @@
 {
-	"project_name": "",
-	"project_description": "Welcome to project {{ cookiecutter.project_name }}!",
-	"repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-	"owner_name": "mj0ln1r42",
-	"repo_url": "https://www.github.com/{{ cookiecutter.owner_name }}/{{ cookiecutter.repo_name }}"
+    "project_name": "",
+    "project_description": "Welcome to project {{ cookiecutter.project_name }}!",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "owner_name": "mj0ln1r42",
+    "repo_url": "https://www.github.com/{{ cookiecutter.owner_name }}/{{ cookiecutter.repo_name }}"
 }
