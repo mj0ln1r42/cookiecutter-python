@@ -9,7 +9,7 @@ This is defined as VSCode's default formatter, and is automatically invoked when
 - **[iSort](https://pycqa.github.io/isort/)** - Import Statement Ordering:
 This sorts our import statements into distinctive layers and keeps things clean for us. Invoked automatically on file save.
 - **[MyPy](https://mypy-lang.org/)** - Static Type Checking:
-We highly encourage using typed code as much as possible to allow for explicit programming. (the [py.typed]({{ cookiecutter.repo_url }}/src/{{ cookiecutter.repo_name }}/py.typed) file in /src/{{ cookiecutter.repo_name }} lets MyPy know this package is typed.)
+We highly encourage using typed code as much as possible to allow for explicit programming. (the [py.typed]({{ cookiecutter.repo_url }}/src/{{ cookiecutter.package_name }}/py.typed) file in /src/{{ cookiecutter.package_name }} lets MyPy know this package is typed.)
 - **[PyTest](https://docs.pytest.org/)** - Test Execution:
 It's important to keep our code tested, so we're using PyTest integrated directly with VSCode to make sure things keep working. Check out our [/tests]({{ cookiecutter.repo_url }}/tests)
 

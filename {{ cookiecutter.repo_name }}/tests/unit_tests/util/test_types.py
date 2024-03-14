@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from {{ cookiecutter.repo_name }}.util.types import *
+from {{ cookiecutter.package_name }}.util.types import *
 
 
 def _create_file(filename: PathLike) -> bool:
