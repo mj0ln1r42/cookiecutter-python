@@ -14,6 +14,14 @@ pipx install cookiecutter
 Follow these steps to create a new project using this template!
 - Create a new repo in github
 - Clone the empty repo to your local
-- From a shell terminal in the cloned directory: ```cookiecutter --output-dir .. --overwrite-if-exists git+ssh://git@github.com/mj0ln1r42/cookiecutter-python repo_name=${PWD##*/}```
+- From a shell terminal in the cloned directory:
+```
+cookiecutter --output-dir .. --overwrite-if-exists git+ssh://git@github.com/mj0ln1r42/cookiecutter-python project_name=${PWD##*/} repo_name=${PWD##*/}
+```
 - Enter a Project Name! The rest of the parameters are defaulted for you!
-- Push changes! The commit has already been created for you!
+
+### Local Use
+To use this template locally (ie for development), repeate the steps above but use this instead
+```
+cookiecutter --output-dir .. --overwrite-if-exists /mnt/c/Dev/mj0ln1r42/cookiecutter-python project_name=${PWD##*/} repo_name=${PWD##*/}
+```

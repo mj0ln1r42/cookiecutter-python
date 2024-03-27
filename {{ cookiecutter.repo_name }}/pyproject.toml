@@ -1,10 +1,16 @@
 [project]
 name = "{{ cookiecutter.repo_name }}"
+version = "0.1.0"
 description = "{{ cookiecutter.project_description }}"
 readme = "README.md"
 authors = [
-  {name = "{{ cookiecutter.owner_name }}"}
+  "{{ cookiecutter.owner_name }}"
 ]
+packages = [{include = "{{ cookiecutter.slug }}", from="src"}]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [project.urls]
 Repository = "{{ cookiecutter.repo_url }}"
@@ -16,6 +22,14 @@ lines_after_imports = 2
 
 [tool.mypy]
 mypy_path = "src"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "*"
+platformdirs = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
 
 [tool.pytest.ini_options]
 pythonpath = "src"
