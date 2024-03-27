@@ -21,7 +21,21 @@ cookiecutter --output-dir .. --overwrite-if-exists git+ssh://git@github.com/mj0l
 - Enter a Project Name! The rest of the parameters are defaulted for you!
 
 ### Local Use
-To use this template locally (ie for development), repeate the steps above but use this instead
+To use this template locally (ie for development), repeat the steps above but use this instead, changing the path to match your local project repo path.
+
 ```
 cookiecutter --output-dir .. --overwrite-if-exists /mnt/c/Dev/mj0ln1r42/cookiecutter-python project_name=${PWD##*/} repo_name=${PWD##*/}
+```
+
+### Replay Generation
+Previously generated projects can be regenerated without having to type in everything again
+
+Remote (standard):
+```
+cookiecutter --output-dir .. --overwrite-if-exists --replay git+ssh://git@github.com/mj0ln1r42/cookiecutter-python
+```
+
+Local (for development):
+```
+cookiecutter --output-dir .. --overwrite-if-exists --replay /mnt/c/Dev/mj0ln1r42/cookiecutter-python
 ```
