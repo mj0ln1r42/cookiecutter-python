@@ -3,6 +3,15 @@
     "project_description": "Welcome to project {{ cookiecutter.project_name }}!",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "slug": "{{ cookiecutter.repo_name.lower().replace(' ', '_') }}",
-    "owner_name": "mj0ln1r42",
-    "repo_url": "https://www.github.com/{{ cookiecutter.owner_name }}/{{ cookiecutter.repo_name }}"
+    "author": "mj0ln1r42",
+    "owner": "{{ cookiecutter.author }}",
+    "repo_url": "https://www.github.com/{{ cookiecutter.owner }}/{{ cookiecutter.repo_name }}",
+    "license": [
+        "MIT",
+        "BSD-2",
+        "BSD-3",
+        "GNU GPL v3.0",
+        "Apache Software License 2.0",
+        "None"
+    ]
 }

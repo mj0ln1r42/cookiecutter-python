@@ -1,27 +1,11 @@
-[project]
+[tool.poetry]
 name = "{{ cookiecutter.repo_name }}"
 version = "0.1.0"
 description = "{{ cookiecutter.project_description }}"
 readme = "README.md"
-authors = [
-  "{{ cookiecutter.owner_name }}"
-]
-packages = [{include = "{{ cookiecutter.slug }}", from="src"}]
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[project.urls]
-Repository = "{{ cookiecutter.repo_url }}"
-
-[tool.isort]
-profile = "black"
-force_single_line = true
-lines_after_imports = 2
-
-[tool.mypy]
-mypy_path = "src"
+repository = "{{ cookiecutter.repo_url }}"
+authors = ["{{ cookiecutter.author }}"]
+packages = [{ include = "{{ cookiecutter.slug }}", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -31,6 +15,17 @@ platformdirs = "*"
 [tool.poetry.group.dev.dependencies]
 pytest = "*"
 
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+lines_after_imports = 2
+
+[tool.mypy]
+mypy_path = "src"
+
 [tool.pytest.ini_options]
 pythonpath = "src"
-

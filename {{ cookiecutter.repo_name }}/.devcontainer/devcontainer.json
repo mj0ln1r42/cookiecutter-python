@@ -45,7 +45,9 @@
                 "ms-python.isort",
                 "ms-python.mypy-type-checker",
                 "ms-python.python",
-                "ms-python.vscode-pylance"
+                "ms-python.vscode-pylance",
+                "tamasfe.even-better-toml",
+                "yzhang.markdown-all-in-one"
             ]
         }
     },
