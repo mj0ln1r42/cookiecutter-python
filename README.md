@@ -16,7 +16,7 @@ Follow these steps to create a new project using this template!
 - Clone the empty repo to your local
 - From a shell terminal in the cloned directory:
 ```
-cookiecutter --output-dir .. --overwrite-if-exists git+ssh://git@github.com/mj0ln1r42/cookiecutter-python project_name=${PWD##*/} repo_name=${PWD##*/}
+cookiecutter --output-dir .. --overwrite-if-exists git+ssh://git@github.com/mj0ln1r42/cookiecutter-python --checkout flask project_name=${PWD##*/} repo_name=${PWD##*/}
 ```
 - Enter a Project Name! The rest of the parameters are defaulted for you!
 
@@ -32,7 +32,7 @@ Previously generated projects can be regenerated without having to type in every
 
 Remote (standard):
 ```
-cookiecutter --output-dir .. --overwrite-if-exists --replay git+ssh://git@github.com/mj0ln1r42/cookiecutter-python
+cookiecutter --output-dir .. --overwrite-if-exists --replay git+ssh://git@github.com/mj0ln1r42/cookiecutter-python --checkout flask
 ```
 
 Local (for development):
