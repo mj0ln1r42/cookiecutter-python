@@ -1,3 +1,14 @@
+[project]
+name = "{{ cookiecutter.repo_name }}"
+description = "{{ cookiecutter.project_description }}"
+readme = "README.md"
+authors = [
+  {name = "{{ cookiecutter.owner }}"}
+]
+
+[project.urls]
+Repository = "{{ cookiecutter.repo_url }}"
+
 [tool.isort]
 profile = "black"
 force_single_line = true
