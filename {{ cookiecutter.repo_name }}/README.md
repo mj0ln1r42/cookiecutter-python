@@ -30,4 +30,4 @@ We highly encourage using typed code as much as possible to allow for explicit p
 It's important to keep our code tested, so we're using PyTest integrated directly with VSCode to make sure things keep working. Check out our [/tests]({{ cookiecutter.repo_url }}/tests)
 
 ---
-This project was created from my cookiecutter python repo, [`mj0ln1r42/cookiecutter-python`](https://github.com/mj0ln1r42/cookiecutter-python)
+This project was created from my cookiecutter python repo, [`mj0ln1r42/cookiecutter-python (flask)`](https://github.com/mj0ln1r42/cookiecutter-python/tree/flask)

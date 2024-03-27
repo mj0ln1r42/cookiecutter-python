@@ -1,4 +1,4 @@
-# [`/cookiecutter-python`](https://github.com/mj0ln1r42/cookiecutter-python)
+# [`cookiecutter-python (flask)`](https://github.com/mj0ln1r42/cookiecutter-python/tree/flask)
 
 Welcome to my Python template project!
 
