@@ -1,4 +1,4 @@
-# [`/{{ cookiecutter.repo_name }}`]({{ cookiecutter.repo_url }})
+# [`{{ cookiecutter.project_name }}`]({{ cookiecutter.repo_url }})
 ## [`/tests`]({{ cookiecutter.repo_url }}/tests)
 
 ## {{ cookiecutter.project_name }} Tests

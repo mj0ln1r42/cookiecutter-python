@@ -1,4 +1,4 @@
-# [`/{{ cookiecutter.repo_name }}`]({{ cookiecutter.repo_url }})
+# [`{{ cookiecutter.project_name }}`]({{ cookiecutter.repo_url }})
 ## [`/.devcontainer`]({{ cookiecutter.repo_url }}/.devcontainer)
 
 ## {{ cookiecutter.project_name }} Dev Container
